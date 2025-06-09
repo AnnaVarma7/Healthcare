@@ -1,0 +1,38 @@
+📱 Screen Time Analysis
+This project analyzes user smartphone behavior by evaluating usage, notifications received, and the frequency of app openings. It helps uncover how notifications drive engagement and app usage over time.
+
+🎯 Objective
+Understand patterns in app usage, notifications, and times opened
+Visualize trends and compare between apps (e.g., Instagram vs. WhatsApp)
+Explore correlation between notifications and usage time
+
+🧰 Tools & Libraries
+Python
+Pandas – Data processing
+Plotly – Interactive data visualizations
+
+📁 Dataset Overview
+Columns:
+Date: Daily record date
+Usage: Time spent on the app (in minutes)
+Notifications: Number of notifications received from the app
+Times opened: How many times the app was opened
+App: App name (Instagram, WhatsApp)
+
+📊 Analysis Highlights
+1. Usage Trend by App
+Visualized how screen time fluctuates daily across different apps.
+
+2. Notification Frequency
+Observed patterns in app notifications and their volume over time.
+
+3. App Open Frequency
+Compared how often users opened each app daily.
+
+4. Notifications vs. Usage Correlation
+Scatter plot with regression shows a positive linear relationship
+
+More notifications → More app usage
+
+💡 Key Insight
+The more notifications an app sends, the higher its user engagement. This reinforces how push notifications influence user behavior.
