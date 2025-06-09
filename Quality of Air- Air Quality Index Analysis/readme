@@ -1,0 +1,56 @@
+🌫️ Air Quality Index (AQI) Analysis – Delhi, January 2023
+This project analyzes hourly air quality data for Delhi in January 2023 to evaluate pollution levels, identify key pollutant contributors, and derive health-oriented insights using Python.
+
+🎯 Objective
+Calculate AQI based on pollutant concentrations using standard breakpoints
+Categorize AQI levels and visualize temporal trends
+Analyze pollutant contribution, correlations, and peak pollution hours
+Derive actionable insights for environmental health monitoring
+
+🧰 Tools & Libraries
+Python
+Pandas – Data preprocessing & aggregation
+Plotly – Interactive time series and categorical visualizations
+
+📁 Dataset Overview
+File: delhiaqi.csv
+Hourly readings of pollutants:
+co, no, no2, o3, so2, pm2_5, pm10, nh3
+
+Timestamp column: date
+
+🧪 Methodology
+1. Preprocessing
+Converted timestamps to datetime format
+Extracted features like hour, day of week
+
+2. AQI Calculation
+Used EPA-based AQI breakpoints
+For each row, AQI = max AQI among all pollutants
+
+Categorized AQI into:
+Good
+Moderate
+Unhealthy (for Sensitive Groups)
+Very Unhealthy
+Hazardous
+
+3. Visual Explorations
+Time-series trends of individual pollutants
+Bar plots of AQI over time and by category
+Donut chart of pollutant contributions
+Correlation heatmap of pollutants
+AQI trends by hour and day of the week
+
+📈 Key Findings
+PM2.5 and PM10 are the most dominant pollutants in Delhi’s air during January.
+AQI levels were consistently in the Very Unhealthy to Hazardous range.
+Wednesdays and Thursdays had the worst air quality.
+Strong positive correlations observed between CO, NO, NO2, SO2, PM2.5, PM10, suggesting common sources (e.g., vehicle emissions).
+O3 showed a negative correlation with other pollutants, reflecting its distinct atmospheric behavior.
+
+🌐 Use Cases
+Environmental monitoring dashboards
+Public health risk communication tools
+Government policy evaluation on air pollution
+Urban planning and traffic emission studies
