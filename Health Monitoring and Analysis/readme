@@ -1,0 +1,60 @@
+🩺 Health Monitoring and Analysis
+This project provides a comprehensive analysis of individual health records, tracking metrics like heart rate, blood pressure, respiratory rate, temperature, and oxygen saturation. The goal is to extract meaningful insights into the health status of a population and identify patterns based on age, gender, activity, sleep quality, and stress levels.
+
+🎯 Objective
+To analyze real-time and recorded physiological health metrics and group individuals by risk categories, activity patterns, and demographic traits to support personalized health tracking and early anomaly detection.
+
+🛠️ Tools & Libraries
+Python
+Pandas, NumPy – Data handling
+Matplotlib, Seaborn – Visualization
+Regex/String methods – Data cleaning and feature engineering
+
+📋 Dataset Features
+Age, Gender
+HeartRate, RespiratoryRate, BodyTemperature
+BloodPressure (split into systolic & diastolic)
+OxygenSaturation
+ActivityLevel, SleepQuality, StressLevel
+Timestamp of record
+
+📊 Key Analyses
+✅ Data Cleaning
+Missing values in BodyTemperature and OxygenSaturation filled using median imputation.
+BloodPressure split into SystolicBP and DiastolicBP.
+
+📈 Descriptive Statistics & Visualizations
+Distributions of heart rate, temperature, respiratory rate, and oxygen saturation.
+Pie chart showing a balanced gender distribution.
+Correlation matrix reveals weak correlations among physiological metrics.
+
+🧍 Health Trends by Category
+Activity Level vs. Heart Rate/Respiratory Rate/Temperature
+Heart rate and respiratory rate increase with activity as expected.
+Slight temperature rise seen with more intense activities.
+Sleep Quality & Stress Level
+Heart rate slightly higher with poor sleep quality or high stress.
+Oxygen saturation remains fairly constant across all groups.
+Blood Pressure
+Most participants have normal or elevated levels.
+Systolic values more variable than diastolic — typical in population studies.
+
+🧠 Patient Grouping
+Patients are grouped based on health-related thresholds:
+
+Category	Levels
+Age Group	Young (≤35), Middle-aged (36–55), Senior (>55)
+Blood Pressure	Normal, Elevated, Hypertension Stage 1 & 2
+Heart Rate	Low (<60 bpm), Normal (60–100 bpm), High (>100 bpm)
+Oxygen Saturation	Normal (≥94%), Low (<94%)
+
+🔍 Distribution Insights
+Most patients are Seniors, with Normal heart rate and blood pressure.
+Low oxygen saturation and severe hypertension are rare, indicating a generally healthy cohort.
+Few outliers exist, mainly in resting heart rate and stress levels.
+
+🔮 Future Extensions
+Add time series analysis for detecting abnormal health events.
+Incorporate wearable device feeds for real-time streaming analysis.
+Create alerts for critical conditions like hypertensive crisis or hypoxia.
+Build a dashboard for personal or population-level health monitoring.
